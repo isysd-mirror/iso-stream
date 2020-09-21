@@ -1,6 +1,6 @@
 'use strict'
-import global from '../global/global.js'
-import { Process } from '../process/process.js'
+import global from '../always-global/global.js'
+import { Process } from '../iso-process/process.js'
 global.process = Process.getProcess()
 
 var experimentalWarnings = new Set();
